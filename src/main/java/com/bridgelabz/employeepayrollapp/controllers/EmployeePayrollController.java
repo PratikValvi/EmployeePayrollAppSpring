@@ -52,7 +52,7 @@ public class EmployeePayrollController {
 	}
 	
 	/*
-	 * curl -X PUT -H "Content-Type:application/json" -d '{"name":"Lisa","salary":3000}' 
+	 * curl -X PUT -H "Content-Type:application/json" -d '{"name":"Lisa","salary":3000}'
 	 * "http://localhost:8080/employeepayrollservice/update" -w "\n"
 	 */
 	
