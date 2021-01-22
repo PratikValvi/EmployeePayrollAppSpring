@@ -40,8 +40,12 @@ public @Data class EmployeePayrollData {
 	private List<String> departments;
 	
 	public EmployeePayrollData() {}
+	
+	public EmployeePayrollData(EmployeePayrollDTO employeePayrollDTO) {
+		this.updateEmployeePayrollData(employeePayrollDTO);
+	}
 
-	public EmployeePayrollData( EmployeePayrollDTO empPayrollDTO) {
+	public void updateEmployeePayrollData(EmployeePayrollDTO empPayrollDTO) {
 		this.name = empPayrollDTO.name;
 		this.salary = empPayrollDTO.salary;
 		this.gender = empPayrollDTO.gender;
